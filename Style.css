@@ -1,28 +1,31 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   transition: .5s;
 }
-:root{
+
+:root {
   /* Primary */
 
---text-color: hsl(215, 51%, 70%);
---Cyan: hsl(178, 100%, 50%);
+  --text-color: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
 
-    /* Neutral */
+  /* Neutral */
 
---mainBG: hsl(217, 54%, 11%);
---cardBG: hsl(216, 50%, 16%);
---line: hsl(215, 32%, 27%);
---headcolor: hsl(0, 0%, 100%);
+  --mainBG: hsl(217, 54%, 11%);
+  --cardBG: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --headcolor: hsl(0, 0%, 100%);
 
 }
+
 body {
-  background-color:var(--mainBG);
+  background-color: var(--mainBG);
   font-size: 18px;
   display: flex;
-  font-family: 'Outfit', sans-serif;; 
+  font-family: 'Outfit', sans-serif;
+  ;
   justify-content: center;
   align-items: center;
   color: var(--text-color);
@@ -43,7 +46,7 @@ body {
   justify-content: center;
   position: relative;
   align-items: center;
-
+  cursor: pointer
 }
 
 .img-head img {
@@ -53,8 +56,10 @@ body {
 }
 
 .head {
-  color:var(--headcolor);
+  width: fit-content;
+  color: var(--headcolor);
   font-size: 1.5rem;
+  cursor: pointer;
   margin: 15px
 }
 
@@ -71,13 +76,14 @@ span img {
   margin-bottom: -2px
 }
 
-.info :first-child{
-  color:var(--Cyan) ;
+.info :first-child {
+  color: var(--Cyan);
 }
 
 div span:nth-child(2) {
-  color:var(--text-color) ;
+  color: var(--text-color);
 }
+
 .clo {
   width: 15px;
   margin-right: 3px
@@ -91,7 +97,7 @@ div span:nth-child(2) {
 .line {
   width: 260px;
   height: 1px;
-  background-color:var(--line);
+  background-color: var(--line);
   margin: 5px auto 10px
 }
 
@@ -118,8 +124,9 @@ p {
   line-height: 2
 }
 
-span>.name-coding{
-  color:var(--headcolor)
+span.name-coding {
+  color: var(--headcolor);
+  cursor: pointer
 }
 
 .name-coding:hover {
@@ -127,7 +134,7 @@ span>.name-coding{
 }
 
 .head:hover {
-  color:var(--Cyan)
+  color: var(--Cyan)
 }
 
 .img-head::before {
@@ -136,7 +143,7 @@ span>.name-coding{
   top: 0px;
   left: 0px;
   width: 100%;
-  height:100%;
+  height: 100%;
   background: hsl(178, 100%, 50%, 60%);
   opacity: 0;
   border-radius: 8%;
