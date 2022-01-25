@@ -1,0 +1,159 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: .5s;
+}
+:root{
+  /* Primary */
+
+--text-color: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+
+--mainBG: hsl(217, 54%, 11%);
+--cardBG: hsl(216, 50%, 16%);
+--line: hsl(215, 32%, 27%);
+--headcolor: hsl(0, 0%, 100%);
+
+}
+body {
+  background-color:var(--mainBG);
+  font-size: 18px;
+  display: flex;
+  font-family: 'Outfit', sans-serif;; 
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  min-height: 100vh
+}
+
+.card-bg {
+  width: 375px;
+  height: calc(100vh-50px);
+  background-color: var(--cardBG);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4%;
+}
+
+.img-head {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+
+}
+
+.img-head img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8%
+}
+
+.head {
+  color:var(--headcolor);
+  font-size: 1.5rem;
+  margin: 15px
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px
+}
+
+span img {
+  width: 8px;
+  height: 15px;
+  margin-bottom: -2px
+}
+
+.info :first-child{
+  color:var(--Cyan) ;
+}
+
+div span:nth-child(2) {
+  color:var(--text-color) ;
+}
+.clo {
+  width: 15px;
+  margin-right: 3px
+}
+
+.eth {
+  margin-right: 3px;
+  width: 10px
+}
+
+.line {
+  width: 260px;
+  height: 1px;
+  background-color:var(--line);
+  margin: 5px auto 10px
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border: white 1px solid;
+  border-radius: 50%;
+  margin: 15px
+}
+
+.ava {
+  display: flex;
+  align-items: center;
+
+}
+
+.cre {
+  margin: 15px 0
+}
+
+p {
+  margin: 15px;
+  line-height: 2
+}
+
+span>.name-coding{
+  color:var(--headcolor)
+}
+
+.name-coding:hover {
+  color: var(--Cyan)
+}
+
+.head:hover {
+  color:var(--Cyan)
+}
+
+.img-head::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height:100%;
+  background: hsl(178, 100%, 50%, 60%);
+  opacity: 0;
+  border-radius: 8%;
+  transition: .5s ease-out;
+}
+
+.view {
+  z-index: 999;
+  position: absolute;
+  transition: .6s ease-out;
+  opacity: 0
+}
+
+.img-head:hover .view {
+  opacity: 1;
+}
+
+.img-head:hover:before {
+  opacity: 1
+}
